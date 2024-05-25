@@ -27,11 +27,6 @@ namespace {
 
   UINT timerId;
 
-  void waitForUserToExit() {
-    std::cout << "Press Enter to exit . . .";
-    std::cin.get();
-  }
-
   bool isGameInFocus() {
     HWND window = GetForegroundWindow();
     char buffer[256];
@@ -303,10 +298,8 @@ int main(int argc, char **argv) {
     startTimer();
   } catch (std::exception &e) {
     std::fprintf(stderr, "Error: %s\n\n", e.what());
-    waitForUserToExit();
   }
 
   timeKillEvent(timerId);
-  
   return 1;
 }

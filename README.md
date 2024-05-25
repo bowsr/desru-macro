@@ -1,12 +1,25 @@
 # DOOM Eternal Macro
 
-A speedrunning-intended macro for DOOM Eternal that allows you to spam inputs without a freescroll mouse. 
+A speedrunning-intended macro for DOOM Eternal that allows you to spam inputs without a freescroll mouse.
+
+### DESRU
+
+This fork of the macro was modified for better integration with the DOOM Eternal Speedrun Utility ([DESRU](https://github.com/bowsr/DESRU)).
 
 ## Downloading & Installing
 
-If you just want to get the macro, check the [releases tab](https://github.com/henyK/doom-eternal-macro/releases), and download the latest `DOOMEternalMacro.zip`. Extract the contents wherever you want, start the game and then run the executable.
+Download and install [DESRU](https://github.com/bowsr/DESRU/releases/latest) to grab the latest build of this macro.
 
 ## Key Bindings
+
+### Managed by DESRU
+
+Everything about the macro, including creating the `bindings.txt` config file and running/restarting the process, is handled for you by DESRU.  
+Just bind a key in DESRU, enable the macro in the options section of DESRU, and you're good to go.
+
+### Manual Macro Usage
+
+*If, for whatever reason, you need to manually run this macro without DESRU, follow the instructions below.*
 
 The default bindings for this macro include the `middle mouse button` for `spam mousewheel down` & `X2 mouse button (side button)` for `spam mousewheel up`. If you don't like using these specific keys you can change them in `bindings.txt`. This file has the following format:
 `<key code down> <key code up>` or
@@ -33,4 +46,4 @@ To activate the macro in-game, just hold down the respective key for as long as 
 
 ### Allowance in Speedruns
 
-Currently all DOOM Eternal speedrun categories (Any%, 100%, All Collectibles) on the official [leaderboard](https://www.speedrun.com/doom_eternal). allow this macro to be used. This is to level the playing field as quite a few glitches strongly benefit from using a freescroll mousewheel.
+Currently all DOOM Eternal speedrun categories (Any%, 100%, All Collectibles) on the official [leaderboard](https://www.speedrun.com/doom_eternal) allow this macro to be used. This is to level the playing field as quite a few glitches strongly benefit from using a freescroll mousewheel.
