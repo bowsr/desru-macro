@@ -12,6 +12,7 @@ using namespace std::literals;
 
 namespace {
   const std::string DOOM_ETERNAL_WINDOW_NAME = "DOOMEternal";
+  const std::string DOOM_SANDBOX_WINDOW_NAME = "DOOMSandBox";
 
   HHOOK mouseHook;
   HHOOK keyboardHook;
@@ -34,7 +35,8 @@ namespace {
 
     // Match any window starting with "DOOMEternal".
     std::string foregroundWindowText(buffer);
-    return foregroundWindowText.substr(0, DOOM_ETERNAL_WINDOW_NAME.length()) == DOOM_ETERNAL_WINDOW_NAME;
+    foregroundWindowText = foregroundWindowText.substr(0, DOOM_ETERNAL_WINDOW_NAME.length());
+    return foregroundWindowText == DOOM_ETERNAL_WINDOW_NAME || foregroundWindowText == DOOM_SANDBOX_WINDOW_NAME;
   }
 
   void handleKey(const DWORD keyCode, const bool isDown) {
